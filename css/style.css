@@ -19,8 +19,6 @@
         width: 65%;
         margin: auto;
         /* magin funzia con tag di tipo block! e sto centrando se stesso */
-        /* test */
-        background-color: cornflowerblue;
     }
 
     img {
@@ -47,8 +45,6 @@
             tag di tipo block!
             Inoltre qui sto centrando i figli */
         text-align: center;
-        /* test */
-        border: 1px solid white;
     }
 
     .box {
@@ -61,15 +57,28 @@
         /* l'immagine è troppo grande per il container e in questo caso 
                             nascondiamo la parte in eccesso */
         background-image: url('../img/pattern.png');
-        background-size: contain;    
-        /* test */
-        border: 1px solid rgb(255, 255, 255);
+        background-color: #fff;
+        background-size: contain;
     }
 
-    span {
+    .box .text {
         position: absolute;
         bottom: 2%;
         left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .box img, .box .text {
+        display: none;
+    }
+
+    .box:hover {
+        background-image: none;
+    }
+
+    .box:hover img, .box:hover .text {
+        display: inline-block;
     }
 
     /* stop Main */
