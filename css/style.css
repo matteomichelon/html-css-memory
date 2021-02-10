@@ -17,9 +17,15 @@
 
     .container {
         width: 65%;
-        margin: auto; /* magin funzia con tag di tipo block! e sto centrando se stesso */
+        margin: auto;
+        /* magin funzia con tag di tipo block! e sto centrando se stesso */
         /* test */
         background-color: cornflowerblue;
+    }
+
+    img {
+        width: 80%;
+        /* in questo caso l'immagine non andrà mai oltre il 100% di chi li contiene */
     }
 
     /* stop Common */
@@ -42,7 +48,6 @@
             Inoltre qui sto centrando i figli */
         text-align: center;
         /* test */
-        background-color: tomato;
         border: 1px solid white;
     }
 
@@ -51,9 +56,20 @@
         display: inline-block;
         width: 20%;
         margin: 10px;
+        position: relative;
+        overflow: hidden;
+        /* l'immagine è troppo grande per il container e in questo caso 
+                            nascondiamo la parte in eccesso */
+        background-image: url('../img/pattern.png');
+        background-size: contain;    
         /* test */
         border: 1px solid rgb(255, 255, 255);
-        background-color: black;
+    }
+
+    span {
+        position: absolute;
+        bottom: 2%;
+        left: 0;
     }
 
     /* stop Main */
