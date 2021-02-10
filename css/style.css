@@ -1,0 +1,59 @@
+    /* Reset */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* stop Reset */
+
+    /* Common */
+
+    body {
+        font-family: 'Nerko One', cursive, Arial, Helvetica, sans-serif;
+        background-color: #add8e6;
+    }
+
+    .container {
+        width: 65%;
+        margin: auto; /* magin funzia con tag di tipo block! e sto centrando se stesso */
+        /* test */
+        background-color: cornflowerblue;
+    }
+
+    /* stop Common */
+
+    /* Header */
+
+    h1 {
+        color: #fff;
+        text-align: center;
+    }
+
+    /* stop Header */
+
+    /* Main */
+
+    .row {
+        /* usiamo text align:center perchè è un tag di tipo inline/inline-block
+            c'è differenza con margin:auto perchè lo usiamo su 
+            tag di tipo block!
+            Inoltre qui sto centrando i figli */
+        text-align: center;
+        /* test */
+        background-color: tomato;
+        border: 1px solid white;
+    }
+
+    .box {
+        height: 200px;
+        display: inline-block;
+        width: 20%;
+        margin: 10px;
+        /* test */
+        border: 1px solid rgb(255, 255, 255);
+        background-color: black;
+    }
+
+    /* stop Main */
