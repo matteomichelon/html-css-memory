@@ -24,7 +24,7 @@
         width: 60%;
     }
 
-    footer{
+    footer {
         margin-top: 2%;
         margin-bottom: 5%;
         text-align: center;
@@ -49,7 +49,7 @@
         text-align: center;
     }
 
-    .box {
+    .box, .box-no-hover {
         height: 200px;
         display: inline-block;
         width: 20%;
@@ -62,7 +62,7 @@
         border-radius: 30px;
     }
 
-    .box .text {
+    .box .text, .text-no-hover {
         position: absolute;
         bottom: 10%;
         font-size: 200%;
@@ -84,10 +84,12 @@
         display: inline-block;
     }
 
-
-/*     #discovery{
+    .box-no-hover {
         background-image: none;
-        display: inline-block;       
-    } */
+    }
+
+    .text-no-hover:hover {
+        color: #f40b79;
+    }
 
     /* stop Main */
