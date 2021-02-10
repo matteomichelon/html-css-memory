@@ -3,90 +3,7 @@
     * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;    /* Reset */
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-    
-        /* stop Reset */
-    
-        /* Common */
-    
-        body {
-            font-family: 'Nerko One', cursive, Arial, Helvetica, sans-serif;
-            background-color: #add8e6;
-        }
-    
-        .container {
-            width: 65%;
-            margin: auto;
-            /* magin funzia con tag di tipo block! e sto centrando se stesso */
-        }
-    
-        img {
-            width: 80%;
-            /* in questo caso l'immagine non andrà mai oltre il 100% di chi li contiene */
-        }
-    
-        /* stop Common */
-    
-        /* Header */
-    
-        h1 {
-            color: #fff;
-            text-align: center;
-        }
-    
-        /* stop Header */
-    
-        /* Main */
-    
-        .row {
-            /* usiamo text align:center perchè è un tag di tipo inline/inline-block
-                c'è differenza con margin:auto perchè lo usiamo su 
-                tag di tipo block!
-                Inoltre qui sto centrando i figli */
-            text-align: center;
-        }
-    
-        .box {
-            height: 200px;
-            display: inline-block;
-            width: 20%;
-            margin: 10px;
-            position: relative;
-            overflow: hidden;
-            /* l'immagine è troppo grande per il container e in questo caso 
-                                nascondiamo la parte in eccesso */
-            background-image: url('../img/pattern.png');
-            background-color: #fff;
-            background-size: contain;
-        }
-    
-        .box .text {
-            position: absolute;
-            bottom: 2%;
-            left: 0;
-            width: 100%;
-            text-align: center;
-        }
-    
-        .box img, .box .text {
-            display: none;
-        }
-    
-        .box:hover {
-            background-image: none;
-        }
-    
-        .box:hover img, .box:hover .text {
-            display: inline-block;
-        }
-    
-        /* stop Main */
+        box-sizing: border-box;
     }
 
     /* stop Reset */
@@ -102,8 +19,6 @@
         width: 65%;
         margin: auto;
         /* magin funzia con tag di tipo block! e sto centrando se stesso */
-        /* test */
-        background-color: cornflowerblue;
     }
 
     img {
@@ -130,8 +45,6 @@
             tag di tipo block!
             Inoltre qui sto centrando i figli */
         text-align: center;
-        /* test */
-        border: 1px solid white;
     }
 
     .box {
@@ -144,15 +57,28 @@
         /* l'immagine è troppo grande per il container e in questo caso 
                             nascondiamo la parte in eccesso */
         background-image: url('../img/pattern.png');
-        background-size: contain;    
-        /* test */
-        border: 1px solid rgb(255, 255, 255);
+        background-color: #fff;
+        background-size: contain;
     }
 
-    span {
+    .box .text {
         position: absolute;
         bottom: 2%;
         left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .box img, .box .text {
+        display: none;
+    }
+
+    .box:hover {
+        background-image: none;
+    }
+
+    .box:hover img, .box:hover .text {
+        display: inline-block;
     }
 
     /* stop Main */
