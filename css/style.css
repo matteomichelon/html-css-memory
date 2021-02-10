@@ -18,12 +18,10 @@
     .container {
         width: 65%;
         margin: auto;
-        /* magin funzia con tag di tipo block! e sto centrando se stesso */
     }
 
     img {
-        width: 80%;
-        /* in questo caso l'immagine non andrà mai oltre il 100% di chi li contiene */
+        width: 60%;
     }
 
     /* stop Common */
@@ -33,6 +31,8 @@
     h1 {
         color: #fff;
         text-align: center;
+        font-size: 65px;
+        margin-bottom: 2%;
     }
 
     /* stop Header */
@@ -40,10 +40,6 @@
     /* Main */
 
     .row {
-        /* usiamo text align:center perchè è un tag di tipo inline/inline-block
-            c'è differenza con margin:auto perchè lo usiamo su 
-            tag di tipo block!
-            Inoltre qui sto centrando i figli */
         text-align: center;
     }
 
@@ -54,19 +50,20 @@
         margin: 10px;
         position: relative;
         overflow: hidden;
-        /* l'immagine è troppo grande per il container e in questo caso 
-                            nascondiamo la parte in eccesso */
         background-image: url('../img/pattern.png');
         background-color: #fff;
         background-size: contain;
+        border-radius: 30px;
     }
 
     .box .text {
         position: absolute;
-        bottom: 2%;
+        bottom: 10%;
+        font-size: 200%;
         left: 0;
         width: 100%;
         text-align: center;
+        color: #e3801a;
     }
 
     .box img, .box .text {
