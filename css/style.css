@@ -60,15 +60,18 @@
         background-color: #fff;
         background-size: contain;
         border-radius: 30px;
+        padding: 20px 20px 40px 20px;
     }
 
     .box .text, .text-no-hover {
         position: absolute;
-        bottom: 10%;
+        bottom: 5%;
         font-size: 200%;
         left: 0;
         width: 100%;
-        text-align: center;
+        /* readme 1 */
+        /* text-align: center;
+            non serve perchè ha ereditato da row! */
         color: #e3801a;
     }
 
@@ -76,16 +79,12 @@
         display: none;
     }
 
-    .box:hover {
+    .box:hover, .box-no-hover {
         background-image: none;
     }
 
     .box:hover img, .box:hover .text {
         display: inline-block;
-    }
-
-    .box-no-hover {
-        background-image: none;
     }
 
     .text-no-hover:hover {
